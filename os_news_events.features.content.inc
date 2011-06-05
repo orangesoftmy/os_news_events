@@ -73,7 +73,7 @@ function os_news_events_content_default_fields() {
       'weight' => '-1',
       'parent' => '',
       'label' => array(
-        'format' => 'inline',
+        'format' => 'hidden',
       ),
       'teaser' => array(
         'format' => 'default',
@@ -104,7 +104,7 @@ function os_news_events_content_default_fields() {
       'max_filesize_per_file' => '',
       'max_filesize_per_node' => '',
       'label' => 'File',
-      'weight' => '-1',
+      'weight' => 0,
       'description' => 'Please include only either <strong>File</strong> , <strong>Link</strong> or <strong>Content</strong> only.',
       'type' => 'filefield_widget',
       'module' => 'filefield',
@@ -119,7 +119,7 @@ function os_news_events_content_default_fields() {
       'weight' => 0,
       'parent' => '',
       'label' => array(
-        'format' => 'inline',
+        'format' => 'hidden',
       ),
       'teaser' => array(
         'format' => 'url',
@@ -162,7 +162,7 @@ function os_news_events_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Link',
-      'weight' => 0,
+      'weight' => '1',
       'description' => 'Please include only either <strong>File</strong> , <strong>Link</strong> or <strong>Content</strong> only.',
       'type' => 'link',
       'module' => 'link',

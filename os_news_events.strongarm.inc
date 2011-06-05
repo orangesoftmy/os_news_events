@@ -88,13 +88,12 @@ function os_news_events_strongarm() {
   $strongarm->name = 'content_extra_weights_news';
   $strongarm->value = array(
     'title' => '-5',
-    'body_field' => '1',
-    'revision_information' => '3',
-    'author' => '2',
-    'options' => '4',
+    'body_field' => '2',
+    'revision_information' => '4',
+    'author' => '3',
+    'options' => '5',
     'comment_settings' => '6',
     'menu' => '-4',
-    'path' => '5',
   );
 
   $export['content_extra_weights_news'] = $strongarm;
@@ -116,7 +115,7 @@ function os_news_events_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'date_default_timezone';
-  $strongarm->value = 28800;
+  $strongarm->value = '28800';
 
   $export['date_default_timezone'] = $strongarm;
   $strongarm = new stdClass;

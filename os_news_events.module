@@ -37,7 +37,7 @@ function os_news_events_preprocess_node(&$vars){
       //$vars['content'] = print_r($vars['field_news_link']);
       //Replace $node_url to the uploaded filepath if a file is uploaded
       if($vars['field_news_file'][0]['filepath']){
-        $vars['node_url'] = $vars['field_news_file'][0]['filepath'];
+        $vars['node_url'] = '/'. $vars['field_news_file'][0]['filepath'];
       }
       //Replace $node_url to the link url if a link is provided
       if($vars['field_news_link'][0]['url']){

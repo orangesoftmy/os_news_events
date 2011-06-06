@@ -77,7 +77,7 @@ function os_news_events_views_default_views() {
   $handler->override_option('title', 'Latest News');
   $handler->override_option('empty', 'There are now news at the moment.');
   $handler->override_option('empty_format', '1');
-  $handler->override_option('offset', 1);
+  $handler->override_option('offset', 6);
   $handler->override_option('use_pager', '1');
   $handler->override_option('row_plugin', 'node');
   $handler->override_option('row_options', array(
@@ -346,7 +346,6 @@ function os_news_events_views_default_views() {
     ),
   ));
   $handler->override_option('title', 'News Archive');
-  $handler->override_option('offset', 6);
   $handler->override_option('row_options', array(
     'relationship' => 'none',
     'build_mode' => 'full',
@@ -520,6 +519,7 @@ function os_news_events_views_default_views() {
     ),
   ));
   $handler->override_option('items_per_page', 5);
+  $handler->override_option('offset', 1);
   $handler->override_option('use_more', 1);
   $handler->override_option('use_more_always', 0);
   $handler->override_option('use_more_text', 'Archive');

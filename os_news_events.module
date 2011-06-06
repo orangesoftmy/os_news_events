@@ -3,6 +3,14 @@
 include_once('os_news_events.features.inc');
 
 /**
+ * Implementation of hook_disable().
+ */
+function os_news_events_disable() {
+  $views =  views_get_view('news');
+  $view->delete();
+}
+
+/**
  * Implementation of hook_theme_registry_alter().
  *
  * @param $theme_registry The entire cache of theme registry information, post-processing.

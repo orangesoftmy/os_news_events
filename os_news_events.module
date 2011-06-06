@@ -7,7 +7,7 @@ include_once('os_news_events.features.inc');
  */
 function os_news_events_disable() {
   $views =  views_get_view('news');
-  $view->delete();
+  $views->delete();
 }
 
 /**
